@@ -1,6 +1,6 @@
 ﻿namespace WindowsService
 {
-    partial class Service1
+    partial class Service
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -28,10 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            this.ServiceName = "Service1";
+            this.components = new System.ComponentModel.Container();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            // 
+            // timer
+            // 
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // Service
+            // 
+            this.ServiceName = "Service";
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer timer;
     }
 }
