@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="Models\ConnectionInformix.cs" />
     <Compile Include="Models\ConnectionMicrosoftSqlServer.cs" />
+    <Compile Include="Models\PartsCat.cs" />
+    <Compile Include="Models\Sir_383_Relac_Cliente_Parte.cs" />
     <Compile Include="Models\Sir_99_Partes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
