@@ -11,6 +11,7 @@ namespace ConsoleApp
     {
         private static void Main(string[] args)
         {
+            // add comment for test connection github
             var queryMSS = "usp_CRUDTest01 ";
             var queryMSSFindCountry = "SELECT nIdPais01 FROM [SIR].[SIR].[SIR_01_PAISES] WHERE sClavePais = '{0}'";
             var queryInformix = "SELECT no_cliente, clave, descripcion, fracc_ara, pais, fecha, catego, umtar, cd FROM partscat WHERE fecha >= '06112018'";
