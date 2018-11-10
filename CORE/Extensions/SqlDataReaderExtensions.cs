@@ -43,7 +43,7 @@ namespace CORE.Extensions
                 return null;
             }
 
-            return objects.Count > 0 ? objects : null;
+            return objects;
         }
 
         public static bool HasColumn(this SqlDataReader reader, string columnName)

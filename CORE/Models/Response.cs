@@ -2,15 +2,16 @@
 {
     public enum Status
     {
-        Error = 0,
-        Success = 1
+        Exception = 0,
+        Success = 1,
+        Warning = 2
     }
 
     public class Response
     {
         public Status Status { get; set; }
         public object Data { get; set; }
-        public string Error { get; set; }
+        public string Description { get; set; }
 
         public Response()
         {
@@ -22,11 +23,11 @@
             Status = Status.Success;
             Data = data;            
         }
-
-        public Response(string error)
+        
+        public Response(Status status, string description)
         {
-            Status = Status.Error;
-            Error = error;
+            Status = status;
+            Description = description;
         }
     }
 }

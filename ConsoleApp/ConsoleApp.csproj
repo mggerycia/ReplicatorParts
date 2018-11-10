@@ -45,9 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\PartsCatExtensions.cs" />
+    <Compile Include="Extensions\SupplierExtensions.cs" />
     <Compile Include="Models\ConnectionInformix.cs" />
     <Compile Include="Models\ConnectionMicrosoftSqlServer.cs" />
     <Compile Include="Models\PartsCat.cs" />
+    <Compile Include="Models\RPOperations.cs" />
+    <Compile Include="Models\RPStatus.cs" />
+    <Compile Include="Models\Supplier.cs" />
     <Compile Include="Models\Sir_383_Relac_Cliente_Parte.cs" />
     <Compile Include="Models\Sir_99_Partes.cs" />
     <Compile Include="Program.cs" />

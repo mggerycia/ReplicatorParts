@@ -24,10 +24,10 @@ namespace CORE.Methods
                 }
                 catch (Exception exception)
                 {
-                    if (!call) return new Response(exception.Message);
+                    if (!call) return new Response(Status.Exception, exception.Message);
                     ExecuteNonQuery(query, connection, false);
 
-                    return new Response(exception.Message);
+                    return new Response(Status.Exception, exception.Message);
                 }
                 finally
                 {
@@ -53,10 +53,10 @@ namespace CORE.Methods
                 }
                 catch (Exception exception)
                 {
-                    if (!call) return new Response(exception.Message);
+                    if (!call) return new Response(Status.Exception, exception.Message);
                     ExecuteReader<T>(query, connection, false);
 
-                    return new Response(exception.Message);
+                    return new Response(Status.Exception, exception.Message);
                 }
                 finally
                 {

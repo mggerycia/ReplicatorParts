@@ -44,7 +44,7 @@ namespace CORE.Extensions
                 return null;
             }
 
-            return objects.Count > 0 ? objects : null;
+            return objects;
         }
 
         public static bool HasColumn(this IfxDataReader reader, string columnName)
