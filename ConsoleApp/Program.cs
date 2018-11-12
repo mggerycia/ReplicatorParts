@@ -14,7 +14,7 @@ using System.Linq;
 namespace ConsoleApp
 {
     public class Program
-    {
+    {//
         private static readonly string directory = @"C:\ReplicatorParts";
         private static readonly string file = "Operations.txt";
         private static string path = $@"{directory}\{file}";
